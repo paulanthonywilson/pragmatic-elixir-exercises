@@ -31,6 +31,15 @@ defmodule MyList do
   def flatten([h|t]) when is_list(h), do: flatten(h) ++ flatten(t)
   def flatten([h|t]), do: [h] ++ flatten(t)
 
+  def span(from, to) when to >= from, do: [from | span(from + 1, to)]
+  def span(_from, _to), do: []
+
+  # I cheated and looked at this one - maths not up to it
+  def primes_to(n) do
+    r = span(2,n)
+    r -- lc a inlist r, b inlist r, a <= b, a*b <= n, do: a * b
+  end
+
 end
 
 

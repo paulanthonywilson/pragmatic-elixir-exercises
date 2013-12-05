@@ -34,9 +34,9 @@ defmodule MyListTest do
 
   test "each" do
     # mmm, how do I test this without side-effects????
-    assert MyList.each([], IO.puts(&1)) == :ok
-    assert MyList.each([1], IO.puts(&1)) == :ok
-    assert MyList.each([1, 2], IO.puts(&1)) == :ok
+    assert MyList.each([], &IO.puts(&1)) == :ok
+    assert MyList.each([1], &IO.puts(&1)) == :ok
+    assert MyList.each([1, 2], &IO.puts(&1)) == :ok
   end
 
   test "split" do
@@ -77,6 +77,20 @@ defmodule MyListTest do
     assert_equiv.([1, [2, [[2,2]]], 3])
 
   end
+
+  test "span" do
+    assert MyList.span(1,1) == [1]
+    assert MyList.span(1,2) == [1,2]
+    assert MyList.span(1,5) == [1,2,3,4,5]
+    assert MyList.span(1,0) == []
+  end
+
+  test "primes_to" do
+    assert MyList.primes_to(20) == [2,3,5,7,11,13,17,19]
+  end
+
+
+
 
 
 end
