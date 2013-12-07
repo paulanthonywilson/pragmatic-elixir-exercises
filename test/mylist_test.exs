@@ -32,12 +32,12 @@ defmodule MyListTest do
     assert_equiv.([3,4,5,6,2])
   end
 
-  test "each" do
-    # mmm, how do I test this without side-effects????
-    assert MyList.each([], &IO.puts(&1)) == :ok
-    assert MyList.each([1], &IO.puts(&1)) == :ok
-    assert MyList.each([1, 2], &IO.puts(&1)) == :ok
-  end
+  # test "each" do
+  #   # mmm, how do I test this without side-effects????
+  #   assert MyList.each([], &IO.puts(&1)) == :ok
+  #   assert MyList.each([1], &IO.puts(&1)) == :ok
+  #   assert MyList.each([1, 2], &IO.puts(&1)) == :ok
+  # end
 
   test "split" do
     assert_equiv = fn(list, n)-> assert MyList.split(list, n) == Enum.split(list, n) end
