@@ -2,3 +2,5 @@
 /Users/paul/dev/scratch/elixir/mp/_build/shared/lib/mp/ebin/Elixir.Pragtaxes.beam	Elixir.Pragtaxes	lib/pragtaxes.ex	Elixir.Enum	Elixir.Kernel	Elixir.Keyword	Elixir.Pragtaxes
 /Users/paul/dev/scratch/elixir/mp/_build/shared/lib/mp/ebin/Elixir.Sum.beam	Elixir.Sum	lib/sum.ex	Elixir.Kernel	Elixir.Sum
 /Users/paul/dev/scratch/elixir/mp/_build/shared/lib/mp/ebin/Elixir.MyList.beam	Elixir.MyList	lib/mylist.ex	Elixir.Enum	Elixir.Kernel	Elixir.MyList	erlang
+/Users/paul/dev/scratch/elixir/mp/_build/shared/lib/mp/ebin/Elixir.MyCharList.beam	Elixir.MyCharList	lib/my_string.ex	Elixir.Enum	Elixir.Kernel	Elixir.Module	Elixir.MyCharList	Elixir.MyDqs
+/Users/paul/dev/scratch/elixir/mp/_build/shared/lib/mp/ebin/Elixir.MyDqs.beam	Elixir.MyDqs	lib/my_string.ex	Elixir.Enum	Elixir.Kernel	Elixir.Module	Elixir.MyCharList	Elixir.MyDqs	Elixir.String	erlang
