@@ -33,10 +33,10 @@ defmodule MyDqs do
 
 
   def capitalise_sentences(dqs) do
-    String.split(dqs, ".")
-      |> Enum.map(&(String.strip(&1) |> String.capitalize))
-      |> Enum.join(". ")
-      |> String.strip
+    dqs |> String.split(".")
+        |> Enum.map(&(String.strip(&1) |> String.capitalize))
+        |> Enum.join(". ")
+        |> String.strip
   end
 
 end
