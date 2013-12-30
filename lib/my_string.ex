@@ -30,5 +30,14 @@ defmodule MyDqs do
   def max_length(dqs_list) do
     dqs_list |> Enum.reduce(0, fn(x, acc) -> max(String.length(x), acc) end)
   end
+
+
+  def capitalise_sentences(dqs) do
+    String.split(dqs, ".")
+      |> Enum.map(&(String.strip(&1) |> String.capitalize))
+      |> Enum.join(". ")
+      |> String.strip
+  end
+
 end
 

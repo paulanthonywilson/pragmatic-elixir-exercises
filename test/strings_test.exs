@@ -33,6 +33,13 @@ elephant"
     assert MyDqs.max_length(["cat", "zebra", "elephant", "dog"]) == 8
     assert MyDqs.max_length([]) == 0
   end
+
+
+  test "capitalise sentences" do
+    assert MyDqs.capitalise_sentences("oh") == "Oh"
+    assert MyDqs.capitalise_sentences("oh") == "Oh"
+    assert MyDqs.capitalise_sentences("oh. mY. dOg.") == "Oh. My. Dog."
+  end
 end
 
 
