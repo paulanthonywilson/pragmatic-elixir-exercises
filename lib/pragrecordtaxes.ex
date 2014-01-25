@@ -1,7 +1,7 @@
-defrecord PragOrder, id: nil, state: nil, net_amount: nil
-defrecord PragFullOrder, id: nil, state: nil, net_amount: nil, total_amount: nil
 
 defmodule PragRecordTaxes do
+  defrecord PragOrder, id: nil, state: nil, net_amount: nil
+  defrecord PragFullOrder, id: nil, state: nil, net_amount: nil, total_amount: nil
 
 
   def add_taxes taxrates, orders do
