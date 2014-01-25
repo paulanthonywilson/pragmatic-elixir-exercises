@@ -38,14 +38,14 @@ defmodule PragRecordTaxesTest do
     processed = PragRecordTaxes.process_file(fixture_file, tax_rates)
     expected =
     [
-      full_order( id: 123, state: :NC, net_amount:  100.00, total_amount: 107.50 ),
-      full_order( id: 124, state: :OK, net_amount:  35.50, total_amount: 35.5 ),
-      full_order( id: 125, state: :TX, net_amount:  24.00, total_amount: 25.92 ),
-      full_order( id: 126, state: :TX, net_amount:  44.80, total_amount: 48.384 ),
-      full_order( id: 127, state: :NC, net_amount:  25.00, total_amount: 26.875 ),
-      full_order( id: 128, state: :MA, net_amount:  10.00, total_amount: 10.00 ),
-      full_order( id: 129, state: :CA, net_amount:  102.00, total_amount: 102.00 ),
-      full_order( id: 130, state: :NC, net_amount:  50.00, total_amount: 53.75 ),
+      full_order(id: 123, state: :NC, net_amount:  100.00, total_amount: 107.50),
+      full_order(id: 124, state: :OK, net_amount:  35.50, total_amount: 35.5),
+      full_order(id: 125, state: :TX, net_amount:  24.00, total_amount: 25.92),
+      full_order(id: 126, state: :TX, net_amount:  44.80, total_amount: 48.384),
+      full_order(id: 127, state: :NC, net_amount:  25.00, total_amount: 26.875),
+      full_order(id: 128, state: :MA, net_amount:  10.00, total_amount: 10.00),
+      full_order(id: 129, state: :CA, net_amount:  102.00, total_amount: 102.00),
+      full_order(id: 130, state: :NC, net_amount:  50.00, total_amount: 53.75),
       ]
     List.zip([processed, expected]) |> Enum.each fn {l, r} ->
       assert l == r
